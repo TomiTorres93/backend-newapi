@@ -77,7 +77,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
   store: MongoStore.create({
-    mongoUrl: 'mongodb+srv://tomitorres93:rodolfowalsh93@cluster0.xhrxoec.mongodb.net/test',
+    mongoUrl: 'mongodb+srv://tomitorres93:rodolfowalsh93@cluster0.xhrxoec.mongodb.net/?retryWrites=true&w=majority',
     mongoOptions: {useNewUrlParser: true, useUnifiedTopology: true},
     ttl: 15
   }),
@@ -113,7 +113,7 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 
-const SERVER_PORT = process.env.PORT || 3001;
+const SERVER_PORT =  process.env.PORT || 80;
 
 app.listen(SERVER_PORT, () => {
   console.log("Servidor escuchando por el puerto: " + SERVER_PORT);
