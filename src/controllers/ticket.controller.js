@@ -103,7 +103,7 @@ export const webhookMPController = async (req, res) => {
         };
 
         switch (evento.type) {
-            case 'payment':
+            case 'payment' || 'test.created':
                 await createTicketController({ body: newTicket }, res); // Pasar req y res correctamente
                 break;
             case 'something_else':
