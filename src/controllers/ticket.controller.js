@@ -1,5 +1,5 @@
 import { Router } from "express";
-import ticketService from "../services/dao/ticket.services.mjs";
+import ticketService from "../services/dao/ticket.services.js";
 import nodemailer from 'nodemailer'
 
 const TicketService = new ticketService();

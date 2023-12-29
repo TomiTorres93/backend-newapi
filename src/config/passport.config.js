@@ -1,7 +1,7 @@
 import passport from 'passport';
 import passportLocal from 'passport-local';
-import { userModel } from '../services/dao/models/user.model.mjs';
-import { createHash, isValidPassword, PRIVATE_KEY } from '../utils.mjs';
+import { userModel } from '../services/dao/models/user.model.js';
+import { createHash, isValidPassword, PRIVATE_KEY } from '../utils.js';
 import  GitHubStrategy from 'passport-github2'
 import jwtStrategy from 'passport-jwt'
 

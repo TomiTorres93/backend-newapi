@@ -1,4 +1,4 @@
-import {itemModel} from "./models/item.model.mjs";
+import {itemModel} from "./models/item.model.js";
 
 
 export default class ItemsService {

@@ -1,21 +1,22 @@
 {
-  "name": "backendproyectofinal",
-  "version": "0.1.0",
-  "private": true,
-  "proxy": "https://backend-tomitorres.onrender.com",
+  "name": "newapi",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "��#\u0000 \u0000b\u0000a\u0000c\u0000k\u0000e\u0000n\u0000d\u0000-\u0000n\u0000e\u0000w\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@emotion/styled": "^11.11.0",
-    "@faker-js/faker": "^8.2.0",
-    "@mui/material": "^5.14.7",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "artillery": "^2.0.3",
+    "@faker-js/faker": "^8.3.1",
     "bcrypt": "^5.1.1",
     "buffer": "^6.0.3",
     "cluster": "^0.7.7",
-    "commander": "^11.0.0",
-    "connect-mongo": "^5.0.0",
+    "commander": "^11.1.0",
+    "connect-mongo": "^5.1.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -23,55 +24,19 @@
     "express-compression": "^1.0.2",
     "express-session": "^1.17.3",
     "faker-js": "^1.0.0",
-    "https-browserify": "^1.0.0",
     "jsonwebtoken": "^9.0.2",
-    "mongodb": "^5.8.1",
-    "mongoose": "^7.4.5",
-    "mongoose-paginate-v2": "^1.7.31",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
+    "mongoose-paginate-v2": "^1.7.4",
     "multer": "^1.4.5-lts.1",
-    "nodemailer": "^6.9.6",
-    "passport": "^0.6.0",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.2",
+    "passport": "^0.7.0",
     "passport-github2": "^0.1.12",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
-    "path-browserify": "^1.0.1",
-    "session-file-store": "^1.5.0",
-    "stream-browserify": "^3.0.0",
-    "stream-http": "^3.2.0",
-    "supertest": "^6.3.3",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0",
-    "url": "^0.11.1",
-    "util": "^0.12.5",
-    "web-vitals": "^2.1.4",
     "winston": "^3.11.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "chai": "^4.3.10",
-    "mocha": "^10.2.0"
   }
 }

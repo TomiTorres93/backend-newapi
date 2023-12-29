@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import program from '../process.mjs';
+import program from '../process.js';
 
 const enviroment = program.opts().mode
 

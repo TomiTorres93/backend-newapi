@@ -1,4 +1,4 @@
-import {userModel} from "./models/user.model.mjs";
+import {userModel} from "./models/user.model.js";
 
 export default class UsersService {
     constructor() { 

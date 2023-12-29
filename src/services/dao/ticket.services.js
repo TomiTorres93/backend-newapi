@@ -1,4 +1,4 @@
-import { ticketModel } from "./models/ticket.model.mjs";
+import { ticketModel } from "./models/ticket.model.js";
 
 export default class TicketService { 
 
