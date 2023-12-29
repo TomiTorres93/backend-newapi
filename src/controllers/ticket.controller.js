@@ -98,13 +98,13 @@ export const webhookMPController = async (req, res) => {
         let purchaser = req.query.purchaser
 
         const newTicket = {
-            purchaser: req.body.purchaser,
-            code: req.body.code,
-            amount: req.body.amount,
-            purchase_datetime: req.body.datetime, // Corregir la propiedad duplicada
+            purchaser: req.query.purchaser,
+            code: req.query.code,
+            amount: req.query.amount,
+            purchase_datetime: req.query.datetime, // Corregir la propiedad duplicada
           };
           
-
+          console.log("PURCHASER", purchaser)
         console.log(newTicket)
         console.log(req.query)
 
