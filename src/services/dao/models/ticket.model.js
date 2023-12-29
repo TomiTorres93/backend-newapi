@@ -24,7 +24,6 @@ const ticketSchema = new mongoose.Schema({
     code: stringTypeSchemaUniqueRequired,
     purchase_datetime:  {type: Date},
     amount: numberTypeSchemaNonUniqueRequired,
-    purchaser: stringTypeSchemaNonUniqueRequired
 });
 
 

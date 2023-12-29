@@ -76,7 +76,7 @@ export const getTicketByIdController = async (req, res) => {
 export const createTicketController = async (req, res) => {
     try {
         const { code, purchase_datetime, amount, purchaser } = req.body;
-        const ticket = await TicketService.createTicket({ code, purchase_datetime, amount, purchaser });
+        const ticket = await TicketService.createTicket({ code, purchase_datetime, amount});
         // Envía el correo electrónico al purchaser del nuevo ticket
         const emailResponse = await sendEmailController({
             body: {
@@ -98,15 +98,12 @@ export const webhookMPController = async (req, res) => {
         let purchaser = req.query.purchaser
 
         const newTicket = {
-            purchaser: req.query.purchaser,
             code: req.query.code,
             amount: req.query.amount,
             purchase_datetime: req.query.datetime, // Corregir la propiedad duplicada
           };
           
-          console.log("PURCHASER", purchaser)
-        console.log(newTicket)
-        console.log(req.query)
+
 
         switch (evento.type) {
             case 'payment' || 'test.created':
