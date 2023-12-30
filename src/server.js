@@ -39,7 +39,7 @@ import { addLogger } from './config/logger_BASE.js';
 
 const app = express();
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://backend-tomitorres.netlify.app',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 };
