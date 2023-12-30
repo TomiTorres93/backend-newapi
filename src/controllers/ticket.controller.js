@@ -95,9 +95,10 @@ export const createTicketController = async (req, res) => {
 export const webhookMPController = async (req, res) => {
     try {
         const evento = req.body;
+        const decodedPurchaser = decodeURIComponent(req.query.purchaser);
 
         const newTicket = {
-            purchaser: req.query.purchaser,
+            purchaser: decodedPurchaser,
             code: req.query.code,
             amount: req.query.amount,
             purchase_datetime: req.query.datetime, // Corregir la propiedad duplicada
