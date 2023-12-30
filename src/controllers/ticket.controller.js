@@ -95,19 +95,19 @@ export const createTicketController = async (req, res) => {
 export const webhookMPController = async (req, res) => {
     try {
         const evento = req.body;
-        let purchaser = req.query.purchaser
 
         const newTicket = {
+            purchaser: req.query.purchaser,
             code: req.query.code,
             amount: req.query.amount,
             purchase_datetime: req.query.datetime, // Corregir la propiedad duplicada
           };
           
-
+          console.log(newTicket)
 
         switch (evento.type) {
             case 'payment' || 'test.created':
-                await createTicketController(req, res); // Pasar req y res correctamente
+                await createTicketController({ body: newTicket }, res); // Pasar req y res correctamente
                 break;
             case 'something_else':
                 // Manejar otros casos
