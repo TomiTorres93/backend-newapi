@@ -39,7 +39,7 @@ import { addLogger } from './config/logger_BASE.js';
 
 const app = express();
 const corsOptions = {
-  origin: 'https://backend-tomitorres.netlify.app',
+  origin: ['https://backend-tomitorres.netlify.app', "http://localhost:3000"],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 };
@@ -74,7 +74,7 @@ app.use(cookieParser())
 app.use(compression({
   brotli: {enabled:true, zlib:{}}
 }))
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(session({
